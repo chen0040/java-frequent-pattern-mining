@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by xschen on 9/5/2017.
  */
-public class CollectionUtil {
+public class CollectionUtils {
 
    public static List<List<String>> generateCombinations(List<String> items) {
       List<List<String>> combination = new ArrayList<>();

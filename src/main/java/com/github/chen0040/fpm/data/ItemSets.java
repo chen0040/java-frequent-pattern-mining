@@ -1,8 +1,7 @@
 package com.github.chen0040.fpm.data;
 
-import com.github.chen0040.fpm.utils.CollectionUtil;
+import com.github.chen0040.fpm.utils.CollectionUtils;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -56,7 +55,7 @@ public class ItemSets {
       for(int i=0; i < countSets(); ++i){
          ItemSet itemSet = getItemSet(i);
          List<String> items = itemSet.getItems();
-         List<List<String>> combinations = CollectionUtil.generateCombinations(items);
+         List<List<String>> combinations = CollectionUtils.generateCombinations(items);
          for(List<String> combination : combinations) {
             combination.sort(String::compareTo);
             result.add(combination.stream().collect(Collectors.joining(", ")));
