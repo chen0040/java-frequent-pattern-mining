@@ -4,7 +4,6 @@ package com.github.chen0040.fpm.apriori;
 import com.github.chen0040.fpm.AssocRuleMiner;
 import com.github.chen0040.fpm.data.ItemSets;
 import com.github.chen0040.fpm.data.MetaData;
-import com.github.chen0040.fpm.utils.TupleTwo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
@@ -13,8 +12,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import static org.testng.Assert.*;
 
 
 /**
