@@ -5,7 +5,6 @@ import com.github.chen0040.fpm.AssocRuleMiner;
 import com.github.chen0040.fpm.apriori.AprioriUnitTest;
 import com.github.chen0040.fpm.data.ItemSets;
 import com.github.chen0040.fpm.data.MetaData;
-import com.github.chen0040.fpm.utils.TupleTwo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;

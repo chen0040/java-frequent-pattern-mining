@@ -1,12 +1,11 @@
 package com.github.chen0040.fpm.fpg;
 
+import com.github.chen0040.data.utils.StringUtils;
+import com.github.chen0040.data.utils.TupleTwo;
 import com.github.chen0040.fpm.data.ItemSet;
-import com.github.chen0040.fpm.utils.StringUtils;
-import com.github.chen0040.fpm.utils.TupleTwo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.Serializable;
 import java.util.*;
 import java.util.stream.Collectors;
 

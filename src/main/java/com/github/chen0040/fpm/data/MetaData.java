@@ -1,10 +1,8 @@
 package com.github.chen0040.fpm.data;
 
 
-import com.github.chen0040.fpm.utils.TupleTwo;
 import lombok.Getter;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
