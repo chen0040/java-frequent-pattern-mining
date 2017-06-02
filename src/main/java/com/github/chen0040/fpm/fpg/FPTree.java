@@ -50,15 +50,6 @@ public class FPTree {
       return result;
    }
 
-   public FPTreeNode getRoot() {
-      return root;
-   }
-
-
-   public void setRoot(FPTreeNode root) {
-      this.root = root;
-   }
-
 
    public void addOrderedFreqItems(List<TupleTwo<String, Integer>> orderedFreqItems) {
 

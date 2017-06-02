@@ -52,12 +52,16 @@ public class FPGrowthUnitTest {
 
 
    private ItemSets testBasic(List<List<String>> database) {
-      AssocRuleMiner method = new FPGrowth();
+      FPGrowth method = new FPGrowth();
+
       method.setMinSupportLevel(2);
 
       MetaData metaData = new MetaData(database);
 
-      return method.minePatterns(database, metaData.getUniqueItems());
+      ItemSets result = method.minePatterns(database, metaData.getUniqueItems());
+
+      method.tree().print();
+      return result;
    }
 
 

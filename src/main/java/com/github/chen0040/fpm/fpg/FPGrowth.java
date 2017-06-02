@@ -13,16 +13,20 @@ import java.util.List;
  */
 public class FPGrowth extends AbstractAssocRuleMiner {
 
+   private FPTree fpTree;
 
    @Override
    public ItemSets minePatterns(Iterable<? extends List<String>> database, List<String> uniqueItems)
    {
-      FPTree fpTree = new FPTree();
+      fpTree = new FPTree();
       fpTree.constructTree(database, getMinSupportLevel());
       List<ItemSet> result = fpTree.mineTree(getMinSupportLevel());
       return new ItemSets().addAll(result);
    }
 
+   public FPTree tree(){
+      return fpTree;
+   }
 
 
 }
