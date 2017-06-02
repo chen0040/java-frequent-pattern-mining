@@ -138,33 +138,4 @@ public class ItemSet {
       items.add(item);
    }
 
-   public void prependItem(String item) {
-      List<String> temp = items;
-      items = new ArrayList<>();
-      items.add(item);
-      items.addAll(temp);
-   }
-
-   public String dropFirstItem() {
-      return items.remove(0);
-   }
-
-   public String dropLastItem(){
-      return items.remove(items.size()-1);
-   }
-
-
-   public boolean isSubsetOf(ItemSet rhs) {
-      for(String item : items){
-         if(!rhs.containsItem(item)){
-            return false;
-         }
-      }
-      return true;
-   }
-
-
-   public String firstItem() {
-      return items.get(0);
-   }
 }
