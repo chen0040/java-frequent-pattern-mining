@@ -44,7 +44,7 @@ MetaData metaData = new MetaData(database);
 
 // obtain all frequent item sets with support level not below 2
 ItemSets frequent_item_sets = method.minePatterns(database, metaData.getUniqueItems());
-fis.stream().forEach(itemSet -> System.out.println("item-set: " + itemSet));
+frequent_item_sets.stream().forEach(itemSet -> System.out.println("item-set: " + itemSet));
 
 // obtain the max frequent item sets
 ItemSets max_frequent_item_sets = method.findMaxPatterns(database, metaData.getUniqueItems());
@@ -71,7 +71,7 @@ MetaData metaData = new MetaData(database);
 
 // obtain all frequent item sets with support level not below 2
 ItemSets frequent_item_sets = method.minePatterns(database, metaData.getUniqueItems());
-fis.stream().forEach(itemSet -> System.out.println("item-set: " + itemSet));
+frequent_item_sets.stream().forEach(itemSet -> System.out.println("item-set: " + itemSet));
 
 // obtain the max frequent item sets
 ItemSets max_frequent_item_sets = method.findMaxPatterns(database, metaData.getUniqueItems());
